@@ -62,3 +62,49 @@ if (age >= 18 || age <= 60) {
 } else {
   console.log("You can't drive the car");
 }
+
+// 06) ----------- Nested if else -------------
+let a = 5;
+// IF a is true it will exacute the if block
+if (a == 5) {
+  // IF b is true it will exacute the if block
+  let b = 4;
+  if (b == 4) {
+    let c = 3;
+    if (c == 3) {
+      let d = 2;
+      if (d == 2) {
+        console.log("Nested if block");
+        // OP - Nested if block
+      }
+    }
+  }
+} else {
+}
+
+// 05 ----------------- Switch case ----------------
+let dayIs = + prompt("Enter one number 1 to 4");
+// Prompt is to take input from user.
+// + use to convert string to number.
+
+switch (dayIs) {
+  case 1:
+    console.log("Today is Sunday");
+    break;
+  case 2:
+    console.log("Today is Monday");
+    break;
+  case 3:
+    console.log("Today is Tuesday");
+    break;
+  case 4:
+    console.log("Today is Wednesday");
+    break;
+
+  default:
+    console.log("Wrong input");
+    break;
+}
+
+//input is 4
+// output - Today is Wednesday
