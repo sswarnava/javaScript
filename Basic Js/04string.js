@@ -27,12 +27,10 @@ console.log(lenghtOfTheString); // output 8
 let slice = firstName.slice(2, 5);
 console.log(slice); // output - arn (index-potion 2 to 5)
 
-
 // 03) String substring()
 // If you omit the second parameter, substring() will slice out the rest of the string.
 let substring = firstName.substring(0, 3); // output - Swa (index-potion 0 to 3)
 console.log(substring);
-
 
 // 04) String substr()
 //-------------------------
@@ -62,6 +60,16 @@ console.log(text2); // output - hello world!
 let lastName = "Mudi";
 let fullName = firstName.concat(" ", lastName); // firstName come from line number 2 and add with last name and make a full name.
 console.log(fullName); // output - Swarnava Mudi
+
+// another technique to add string.
+let string1 = "javaScript";
+let string2 = 1;
+let finalString1 = string1 + " is the number-" + string2 + " language."; //OP - javaScript is the number-1 language.
+console.log(finalString1); // we can use it also to add sring and some value.
+
+// another technique to add string.
+let finalString2 = `${string1} is the number-${string2} language. I love it.`; // OP - javaScript is the number-1 language. I love it. (Best way to add the string with value. We can add number aslo)
+console.log(finalString2);
 
 // 10) String trim()
 // It's use to trim the space.
