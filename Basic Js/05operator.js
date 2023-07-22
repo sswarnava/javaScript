@@ -44,8 +44,8 @@ console.log(typeof myNull); // OP - object
 // === comparison symbol with data type compare           |  >= grater equal
 // + addition                                             |  <= less equal
 // - subtraction                                          |  =! Not equal
-// * multiplication
-// / division
+// * multiplication                                       |  || Or symbol
+// / division                                             |  && and symbol
 // % Modules
 
 // 08) Object Datatype
