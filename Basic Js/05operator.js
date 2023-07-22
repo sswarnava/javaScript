@@ -39,6 +39,14 @@ console.log(typeof myNull); // OP - object
 // JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
 
 // 07) Symbol
+// = assign symbol                                        |  > grater than
+// == comparison symbol (equal)                           |  < less than
+// === comparison symbol with data type compare           |  >= grater equal
+// + addition                                             |  <= less equal
+// - subtraction                                          |  =! Not equal
+// * multiplication
+// / division
+// % Modules
 
 // 08) Object Datatype
 // The object data type can contain:
