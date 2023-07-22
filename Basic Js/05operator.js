@@ -22,6 +22,13 @@ console.log(typeof myUndefi); // OP - undefined
 // 05) null
 let myNull = "delete this value in next line using null";
 console.log(myNull); // OP - delete this value in next line using null
+//Basically, null is a primitive type of a variable in JavaScript. Many people consider it a bug in JavaScript as it considers null as an object. Changing or fixing this bug will break the existing codebase, so it is not yet changed. The type of null is an object. That is why it is treated as an object.
+
+// Difference null vs Undifiend
+console.log(undefined === undefined) // true (both type and value are the same)
+console.log(null === null) // true (both type and value are the same)
+console.log(null == undefined) // true (but the "same value") ("==" check only value)
+console.log(null === undefined) // false (not the same type) ("===" check value type both)
 
 myNull = null;
 console.log(myNull); // OP - null
