@@ -29,7 +29,6 @@ fruits.shift();
 console.log(fruits);
 // OP - ['apple', 'mango', 'grapes', 'banana']
 
-
 // 07) Array concat()
 const classGirls = ["Rashi", "Rohini"];
 const classBoys = ["Rohit", "Shaam"];
