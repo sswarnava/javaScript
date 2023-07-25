@@ -39,3 +39,6 @@ console.log(classTotal);
 
 // Array splice()
 // Array slice()
+let arraySlice = fruits.slice(0, 2) // - 0 and 1 index will be display
+console.log(arraySlice);
+// OP - ['apple', 'mango']
