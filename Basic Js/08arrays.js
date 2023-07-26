@@ -63,7 +63,6 @@ array4.push("item5");
 console.log(array4);
 // OP - ['item1', 'item2', 'item3', 'item4', 'item5']
 
-
 fruits = ["Banana", "Orange", "Apple", "Mango"];
 // -- Get the all value using for loop --
 for (let i = 0; i < fruits.length; i++) {
@@ -98,3 +97,17 @@ do {
 // Orange
 // Apple
 // Mango
+
+// array destructuring
+
+const myArray = ["value1", "value2"];
+
+// We can use this simple way But we don't use it -
+// let myVar1 = myArray[0];
+// let myVar2 = myArray[1];
+// console. log("value of myVar1", myVar1);
+// console. log("value of myVar2", myVar2);
+
+// Mostly we use this type of array destructuring
+let [myVar1, myVar2] = myArray; // So here value1 will store myvar1 and same for value2 will store in myvar2
+console.log(myVar1); // OP - value1
