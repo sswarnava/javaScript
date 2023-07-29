@@ -39,6 +39,54 @@ console.log(classTotal);
 
 // Array splice()
 // Array slice()
-let arraySlice = fruits.slice(0, 2) // - 0 and 1 index will be display
+let arraySlice = fruits.slice(0, 2); // - 0 and 1 index will be display
 console.log(arraySlice);
 // OP - ['apple', 'mango']
+
+// ---------- Most Important array methods ---------
+
+// ----- 01 forEach ----
+const numbers = [2, 6, 8, 7];
+
+function multipleBy2(number, index) {
+  console.log(`index is ${index} number is ${number * 2}`);
+}
+
+numbers.forEach(multipleBy2);
+// Output ---
+// index is 0 number is 4
+// index is 1 number is 12
+// index is 2 number is 16
+// index is 3 number is 14
+
+// forEach takes two input one is value and another is index position.
+
+// -------- 02 Map Methods ------
+const square = (number) => {
+  return number * number;
+};
+
+const squareNumber = numbers.map(square);
+console.log(squareNumber);
+// Output - [4, 36, 64, 49]
+
+// ---------- 03 Filter method
+
+const isEven = (number) => {
+  return number % 2 === 0;
+};
+const evenNumbers = numbers.filter(isEven);
+console.log(evenNumbers);
+
+// ----------- 04reduce ------
+const newNumbers = [1, 2, 3, 4, 5];
+const sum = newNumbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+});
+console.log(sum);
+// Accumulator, CurrentValue, return
+//     1              2           3
+//     3              3           6
+//     6              4           10
+//    10              5           15
+// Output is - 15
