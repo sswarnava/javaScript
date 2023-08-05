@@ -17,7 +17,6 @@ person.about();
 
 
 // --- Lets try another Example
-
 function personInfo() {
     let personInfo = `Person Full Name is ${this.firstName} ${this.lastName}`;
     return personInfo;
