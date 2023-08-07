@@ -40,12 +40,14 @@ const person1 = {
     firstName: "Rohit",
     age: 19,
 }
-
 person.fullInfo.call(person1, "guiter", "kolkata"); // OP - Rohit 19 guiter kolkata
+
+
 // ------ Apply Method
 // It is an example of apply method. 
 // Call and apply both allmost same, Just we have to pass arguments in a array form in apply method
 person.fullInfo.apply(person1, ["guiter", "kolkata"]); // OP - Rohit 19 guiter kolkata
+
 
 // ------- Bind Method
 // It is an example of bind method.
