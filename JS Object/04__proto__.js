@@ -36,18 +36,18 @@ console.log(obj2.__proto__);
 
 // We made it and store it for one time in a memory. And we can call derictly from our main object (creatUser).
 // Also Using Proto we not required call also.
-const userMethods = {
-    about: function () {
-        return `${this.firstName} is ${this.age} years old`
-    },
-    is18: function () {
-        return this.age >= 18;
-    }
-};
+// const userMethods = {
+//     about: function () {
+//         return `${this.firstName} is ${this.age} years old`
+//     },
+//     is18: function () {
+//         return this.age >= 18;
+//     }
+// };
 
 // This is the main function
-const creatUser = (firstName, email, age) => {
-    const user = Object.create(userMethods);
+function creatUser(firstName, email, age) {
+    const user = Object.create(creatUser.prototype);
     user.firstName = firstName;
     user.email = email;
     user.age = age;
@@ -55,6 +55,13 @@ const creatUser = (firstName, email, age) => {
     // We are not required to call or declear the any methods here.
     // Because of __proto_ (using Object create process).
 };
+
+creatUser.prototype.about = function(){
+            return `${this.firstName} is ${this.age} years old`
+        }
+creatUser.prototype.is18 = function () {
+            return this.age >= 18;
+        }
 
 // Here we just call and pass the data.
 const user1 = creatUser('Ishaan', 'ishaan@gmail.com', 21);
