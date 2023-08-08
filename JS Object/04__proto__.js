@@ -62,5 +62,8 @@ const user2 = creatUser('Rohit', 'rohit@gmail.com', 23);
 
 console.log(user1); // OP - {firstName: 'Ishaan', email: 'ishaan@gmail.com', age: 21, about: ƒ}
 
-const userInfo1 = user1.about();
-console.log(userInfo1); // OP - Ishaan is 21 years old
+const user1Info = user1.about();
+console.log(user1Info); // OP - Ishaan is 21 years old
+
+const user2Is18 = user2.is18(); 
+console.log(user2Is18); //OP - true
