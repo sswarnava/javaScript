@@ -45,7 +45,7 @@ const userMethods = {
     }
 };
 
-// This is the main object
+// This is the main function
 const creatUser = (firstName, email, age) => {
     const user = Object.create(userMethods);
     user.firstName = firstName;
