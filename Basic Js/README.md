@@ -3,13 +3,11 @@
 ---
 
 ### 02 variabels.js -  about different types of variables
-###### I explained about Different types of variabels . Like - var, let, const.
-    Also I explained about some rules.
+###### I explained about Different types of variabels . Like - var, let, const. Also I explained about some rules.
 ---
 
 ### 03 var_VS_let_VS_const.js - compare the var and let and const 
-###### I try to explained whatever I have knowledge about var let and const. 
-    What are the difference let var and const try to decode in this file.
+###### I try to explained whatever I have knowledge about var let and const. What are the difference let var and const try to decode in this file.
 ---
 
 ### 04 stirng.js - Explain different string Method
@@ -25,8 +23,7 @@
 ---
 
 ### 07 loop
-###### It's a very importent concept for all the programming language.
-    Different types of loop I codede here. Like - while-loop, do/while loop, for loop, for/in loop, for/of loop etc.
+###### It's a very importent concept for all the programming language. Different types of loop I codede here. Like - while-loop, do/while loop, for loop, for/in loop, for/of loop etc.
 ---
 
 ### 08 arrays
