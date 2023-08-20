@@ -34,6 +34,6 @@
 ---
 
 ### 09 array method
-Array have lots of method to play. example - array length, push(), pop(), unshift, shift etc.
+###### Array have lots of method to play. example - array length, push(), pop(), unshift, shift etc.
 ---
 
