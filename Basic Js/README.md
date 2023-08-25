@@ -36,3 +36,7 @@
 
 ### 10 object 
 ###### I coded How to create Basic Object and basic ket pair value. How to add a new value in a object. also object console using for loop. How to display a single value form object i learnt. And object destuructring. 
+---
+
+### 11 function
+###### Function is a very basic and easy concept. File- 11 I try to explained about function definetion, call , pass some value etc. How to call a function and dispaly the output Explained.
