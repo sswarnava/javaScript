@@ -40,6 +40,16 @@
 
 ### 11 function
 ###### Function is a very basic and easy concept. File- 11 I try to explained about function definetion, call , pass some value etc. How to call a function and dispaly the output Explained.
+---
 
 ### 12 scope
 ###### Different Types of scope. like - lexical scope, block scope vs fuction acope.
+---
+
+### 13 parameters 
+###### Explain about different parameters, (dafault parametres, rest parameter, spread operator)
+---
+
+### 14 Callback Function
+###### Learnt about We can pass a function to another function as a parameter called callback function. Very easy but very very importent concept for interview.
+---
