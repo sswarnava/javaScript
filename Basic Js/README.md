@@ -34,3 +34,5 @@
 ###### Array have lots of method to play. example - array length, push(), pop(), unshift, shift etc.
 ---
 
+### 10 object 
+###### I coded How to create Basic Object and basic ket pair value. How to add a new value in a object. also object console using for loop. How to display a single value form object i learnt. And object destuructring. 
