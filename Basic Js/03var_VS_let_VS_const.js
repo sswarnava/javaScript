@@ -1,87 +1,63 @@
 // "use strict"; // - it's help us to avoid wrong delearation-
 
-// var VS let
+// * ---- Without var keyword we can declear a variable .
+myName = "Ishaan"; // We Don't use var keyword but we are able to declear the value and no error. (Not use it, after some time may be it will make trouble). (--- Not recomended ---)
+// we can use strict mode to avoid if we use strict mode it will give an error.
+console.log(myName); // outPut - Rony
 
-//01) Without var key word
-myName = "Ishaan"; // We Don't use var keyword but we are able to declear the value and no error. (Not use it, after some time may be it will make trouble).
-// we can use strict mode to avoid
-// if we use strict mode it will give an error.
-console.log(myName);
-// outPut - Rony
 
-// 02) normal declearation
+// * -------- var VS let -------------- *
+// 01a) ----- variable using var
 var firstName = "Rohit";
-console.log(firstName);
-// outPut - Rohit
+console.log(firstName); // outPut - Rohit
 
-// 03) Same Name with var keyWord
-// here we have used same name with var, repeatedly but This also not good for us. May be some time splleing mistake will create a another unwanted variable.
-
-var firstname = "Mohin"; // like here splle mistake "n"
-console.log(firstName); // But output is cap-N Both are different
-// outPut - Mohin
-
-// 04) use variable name and change the value -
-firstName = "Mohin";
-console.log(firstName);
-
-// 005) Now it's time for let -
-
+// 01b) ----- variable using let
 let lastName = "Joshi";
-console.log(lastName);
-// output - Joshi
+console.log(lastName); // output - Joshi
 
-// 06)
-// let lastName = "Goshi" -- We can't declear multiple let with same name so it good for us and error free code.
+// 02a) var firstName = "Ramu" (We can use it but future it will mess your code.)
 
-// 07) Now we should we
+// 02b) let lastName = "Goshi" ( ---- We can't declear let with multiple same name, And it's help to make error free code. (-- Recomended ---)
+// Now we should (only variable name needed and can change or update the value)
 lastName = "Goshi";
 console.log(lastName);
 
-// 001) So big diff - let and var is same name can be declear multipal time with var key word. but in let one name for one time. leter if you want to change value just type the variable name and change the value.
+// * ----- summary ---- *
+// ----- 001) big diff - let and var is same name can be declear multipal time with var key word. but in let one name for one time. if you want to change value just type the variable name and change the value.
+// ----- 002) One more diff - let is block-scope and var is function-scoped or globally-scoped 
 
-// 002) One more diff - block-scope
-// let support block-scope where var not support block-scope.
 
-// Ex-
+// * ------ "{}" - if you use bracket it's called block ------ *
+// * ------ var belongs to function-scoped or globally-scoped ----- *
 var a = 5;
-console.log(a);
-//output - 5
-
-// "{}" - if you use bracket it's called block
+console.log(a); //output - 5
 {
   a = 10;
-  console.log(a);
-  // output - 10
+  console.log(a); // output - 10
 }
+console.log(a); // output - 10
 
-console.log(a);
-// output - 10
 
-// ----------- But -------------
-
+// * ----------- let is block-scope ------------- *
 let numberB1 = 5;
-console.log(numberB1);
-//output - 5
-
-// "{}" - if you use bracket it's called block-scope
+console.log(numberB1); //output - 5
 {
-  // numberB1 = 10; // outside numberB1 value is different but inside block numberB1 is different.
-  // We can't use outside any value from inside the block And inside the block value can't use from outside the block.
-
-  // if you not use let to declear it will give an error.
-  // so now -
+  // -- Here ( outside numberB1 value is different but inside block numberB1 is different.)
   let numberB1 = 10;
-  console.log(numberB1);
-  // output - 10
-  // inside the block value is 10 so output is 10
+  console.log(numberB1); // output - 10
 }
+console.log(numberB1); // output - 5
+// -- outside the block numberB1 value is 5 and output came from 63 number line code. 
 
-console.log(numberB1);
-// output - 5
 
-// But outside the block numberB1 value is 5 so output is 5 it's came from 63 number line code.
-
-// 004) let and const almost same. 
+// * ------- let and const almost same --------- *
 // different is cosnt can't be change throw-out the program. const means constent.
 // const have also block-scope. 
+
+
+// * -------- Notes ------ * 
+// 1) "use strict" - it's a method use for unwanted error.
+// 2) var don't use. (Function scope)
+// 3) let and const use every time. (block scope)
+// 4) inside the block value can't acess from outside the block normally. 
+// 5) We can acess outside declear value, from inside the block,  when few value which is not       present in our inside block we can call from outside our block.  
