@@ -31,7 +31,7 @@ console.log(classTotal); // Op - ['Rashi', 'Rohini', 'Rohit', 'Shaam']
 
 // -- 08) Array slice()
 let myNum1 = [1, 2, 3, 4, 5, 6]
-let arraySlice = myNum1.slice(0, 3); 
+let arraySlice = myNum1.slice(0, 3);
 console.log(arraySlice); // OP - [ 1, 2, 3, 4, 5, 6 ]
 console.log(myNum1); // OP - [ 1, 2, 3 ]
 
@@ -39,6 +39,12 @@ console.log(myNum1); // OP - [ 1, 2, 3 ]
 let arraySplice = myNum1.splice(0, 3);
 console.log(arraySplice); // OP - [ 1, 2, 3 ]
 console.log(myNum1); // OP - [ 4, 5, 6 ] 
+
+// -- 10) array flat
+const another_array = [1, 2, [3, 4], 5, 6, [7, 8,]]
+const flat_array = another_array.flat()
+console.log(another_array) // OP - [ 1, 2, [ 3, 4 ], 5, 6, [ 7, 8 ] ]
+console.log(flat_array)  // OP - [ 1, 2, 3, 4, 5, 6, 7, 8 ]
 
 
 // * ---------- advance array methods --------- *
