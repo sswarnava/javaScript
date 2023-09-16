@@ -92,7 +92,7 @@ let array4 = [...array3];
 array4.push("item5");
 console.log(array4);
 // OP - ['item1', 'item2', 'item3', 'item4', 'item5']
-
+// Another syntex - let newArray = [...array1, ...array2, ...array3] || OP - [1,2,3,4,5,6,7,8,9] in a single line. 
 
 // * -------- array destructuring ------------ *
 const myArray = ["value1", "value2"];
