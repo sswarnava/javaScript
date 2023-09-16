@@ -1,16 +1,12 @@
-// ---------- Arrays ----------------
-let fruits = ["apple", "mango", "grapes"];
-// we can access entire arrays at a time using array name. ex- fruits
-console.log(fruits);
-// OP - ['apple', 'mango', 'grapes']
+// * ---------- Arrays ---------------- *
+let fruits = ["apple", "mango", "grapes"]; // we can access entire arrays at a time using array name. ex- fruits
+console.log(fruits); // OP - ['apple', 'mango', 'grapes']
 
 let number = [1, 2, 3, 4];
-console.log(number);
-//OP - [1, 2, 3, 4]
+console.log(number); //OP - [1, 2, 3, 4]
 
 let miexdDatatype = [1, 2, 4, "Hello", "car"];
-console.log(miexdDatatype);
-//OP - [1, 2, 4 'Hello', 'car']
+console.log(miexdDatatype); //OP - [1, 2, 4 'Hello', 'car']
 
 // We access arrays using index number also. First array index is 0 and secound is index 1 and third index is 2 and so on in a same order.
 // let fruits = ["apple", "mango", "grapes"];
@@ -20,15 +16,16 @@ console.log(fruits[0]); // OP - apple
 console.log(fruits[1]); // OP - mango
 console.log(fruits[2]); // OP - grapes
 
-// We can change the value of any index position in our array.
+// ---- We can change the value of any index position in our array.
 fruits[1] = "banana";
-console.log(fruits);
-// OP - ['apple', 'banana', 'grapes']
+console.log(fruits); // OP - ['apple', 'banana', 'grapes']
 
-// We can change the entire value of our arrays.
+// ---- We can change the entire value of our arrays.
 fruits = ["a", "b", "c"];
 let myNewArrays = fruits;
-console.log(myNewArrays);
+console.log(myNewArrays); // OP - [ 'a', 'b', 'c' ]
+console.log(fruits); // OP - [ 'a', 'b', 'c' ]
+// * Array follow shallow copy. means heep memory concept. If i change myNewArrays it will chage the value in both (newArray and as well as fruit.) array dont make copy, array point derictly reference.
 
 // typeof Array to check it's a array or not
 console.log(typeof fruits); // OP - object (So array is object)
