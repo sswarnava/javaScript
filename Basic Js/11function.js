@@ -30,12 +30,23 @@ const myNewFun1 = () => {
 myNewFun1(); // OP - Hello World From arrow Fun
 
 // * ------- defalut parameter --------- * 
-function addTwoNumber( num1 = 6, num2 = 4) { return num1+num2 }
+function addTwoNumber(num1 = 6, num2 = 4) { return num1 + num2 }
 let addResult = addTwoNumber() // Here I forgot to give the value, but function use defalut parameter (6  and 4) 
 console.log(addResult) // OP = 10
 
 addResult = addTwoNumber(10) // nam1 = 10 num2 = 4 (I Forgot to give the num2 value.)
 console.log(addResult) // OP = 14
+
+
+
+  // Immediately incoked Function Expressions (IIFE)
+
+  (function iife() {
+    console.log('Hellow world');
+  })();
+// Sy - ()  |   ()
+// function - call
+// ':' semi-colon is most importent. (indicate end the code)
 
 // * ------- Notes ------- *
 // function keyword use to create a normal function.
@@ -44,3 +55,4 @@ console.log(addResult) // OP = 14
 // functionForAdd vs functionForAdd() - First one return full funtion as it is, secound one use for call the function.
 // default paremeter use to set a defalult vlaue in a function, if user forget to give the actual value than it use by defalult.
 // arrow function is the one of importent concept. 
+// IIFE used for excute the code instently or immediately. It samee like a normal function. () and ; is importent mostly. arrow function can be use usinf IIFE method.
