@@ -48,6 +48,13 @@ for (let for_loops = 100; for_loops < 105; for_loops++) {
 // New Number is 103
 // New Number is 104
 
+// * -- Another example off for loop 
+let index = 0
+for (; index < 5; index++) { // We ca declear the starting point variable in out side seprately.
+  console.log(index);
+}
+// OP - 1, 2, 3 , 4
+
 // * -- 04) for/in - loops through the properties of an object -- *
 
 // syntex -
@@ -83,3 +90,11 @@ for (let x of cars) {
 // BMW
 // Volvo
 // Mini
+
+// * ------ Notes ------ *
+// while loop (Not recomended)
+// For loop Ex-(starting point variable; connditon; inrement/decrement)
+// For can execute without start point variable Ex- 51 line
+// for-in can give only key, after got the key we have to acesss the value using array/object with key.
+// for-of use to get all the value derictly one by one from array/object. 
+
