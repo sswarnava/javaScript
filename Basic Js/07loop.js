@@ -91,6 +91,14 @@ for (let x of cars) {
 // Volvo
 // Mini
 
+// * -- 06) forEach
+
+const carBrandName = ["Audi", "BMW", "MG", "TATA"]
+// arrow function OR a normal function can use as a callback function 
+carBrandName.forEach((brandName) => {
+  console.log(`car brand names are ${brandName}`)
+})
+
 // * ------ Notes ------ *
 // while loop (Not recomended)
 // For loop Ex-(starting point variable; connditon; inrement/decrement)
@@ -99,3 +107,6 @@ for (let x of cars) {
 // for-of use to get all the value derictly one by one from array. 
 // for-in mainly use in object. key pair value 
 // for-of use for array. 
+// forEach use to print direct value.
+// forEach need a callback function.
+// forEach can sue for array but can't use for object, I got an Error.
