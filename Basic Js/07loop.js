@@ -95,6 +95,7 @@ for (let x of cars) {
 // while loop (Not recomended)
 // For loop Ex-(starting point variable; connditon; inrement/decrement)
 // For can execute without start point variable Ex- 51 line
-// for-in can give only key, after got the key we have to acesss the value using array/object with key.
-// for-of use to get all the value derictly one by one from array/object. 
-
+// for-in can give only key, after got the key we have to acesss the value using object with key.
+// for-of use to get all the value derictly one by one from array. 
+// for-in mainly use in object. key pair value 
+// for-of use for array. 
