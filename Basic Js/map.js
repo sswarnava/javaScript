@@ -31,3 +31,11 @@ myMap.forEach(element => {
     console.log(element);
 }); // OP - India
     //      Freance
+
+
+// * -- Notes -- *
+// const myMap = new Map() 
+// new with Map() keyword is importent.
+// set is use to set the map data.
+// we can use different loop for the acess the data.
+
