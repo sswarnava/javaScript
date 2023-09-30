@@ -98,6 +98,18 @@ const carBrandName = ["Audi", "BMW", "MG", "TATA"]
 carBrandName.forEach((brandName) => {
   console.log(`car brand names are ${brandName}`)
 })
+// Foreach can't return any value. If we try to return any value, will give undifiend.
+// So have one soluction for this
+const filterNumberArray = [1, 2, 3, 4, 5, 6, 7, 8]
+const greaterThanFive = filterNumberArray.filter((num) => {
+  return num > 5
+})
+console.log(greaterThanFive); // OP - [ 6, 7, 8 ] ( Only Greater Than Five can be print)
+
+// *-- map --*
+const addTen = filterNumberArray.map((num) => num + 10)
+console.log(addTen) // OP - [ 11, 12, 13, 14, 15, 16, 17, 18 ]
+console.log(typeof addTen); // OP - object
 
 // * ------ Notes ------ *
 // while loop (Not recomended)
@@ -110,3 +122,4 @@ carBrandName.forEach((brandName) => {
 // forEach use to print direct value.
 // forEach need a callback function.
 // forEach can sue for array but can't use for object, I got an Error.
+// If we try to return any value using filerEach than we have to declear a empty array and push it using condition form inside the foreach block.
