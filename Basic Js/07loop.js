@@ -111,6 +111,13 @@ const addTen = filterNumberArray.map((num) => num + 10)
 console.log(addTen) // OP - [ 11, 12, 13, 14, 15, 16, 17, 18 ]
 console.log(typeof addTen); // OP - object
 
+// * -- reduce -- *
+const newArrays = [1, 2, 3, 4, 5, 6]
+const totalSum = newArrays.reduce((accumelator, currval) => {
+  return accumelator + currval
+}, 0)
+console.log(totalSum); // OP - 21 
+
 // * ------ Notes ------ *
 // while loop (Not recomended)
 // For loop Ex-(starting point variable; connditon; inrement/decrement)
@@ -123,3 +130,4 @@ console.log(typeof addTen); // OP - object
 // forEach need a callback function.
 // forEach can sue for array but can't use for object, I got an Error.
 // If we try to return any value using filerEach than we have to declear a empty array and push it using condition form inside the foreach block.
+// reduse mainly use for add few value and then return a value. Real example is - shopping cart.
