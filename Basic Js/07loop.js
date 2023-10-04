@@ -112,11 +112,15 @@ console.log(addTen) // OP - [ 11, 12, 13, 14, 15, 16, 17, 18 ]
 console.log(typeof addTen); // OP - object
 
 // * -- reduce -- *
-const newArrays = [1, 2, 3, 4, 5, 6]
+const newArrays = [1, 2, 3]
 const totalSum = newArrays.reduce((accumelator, currval) => {
+  console.log(`accumelator value is ${accumelator} and currval is ${currval}`);
   return accumelator + currval
-}, 0)
-console.log(totalSum); // OP - 21 
+}, 0) // 0 is the starting value. accumelator value.
+console.log(totalSum); // OP - 6
+// OP - accumelator value is 0 and currval is 1
+// accumelator value is 1 and currval is 2
+// accumelator value is 3 and currval is 3  -- last calculation did't print here.
 
 // * ------ Notes ------ *
 // while loop (Not recomended)
