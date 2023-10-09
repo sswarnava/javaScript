@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .myCssStyle{
+            background-color: black;
+            color: #fff;
+            font-size: 2rem;
+            padding: 2rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="para_1">Hello JavaScript</p>
+    <!-- OutPut is - Hello World JS -->
+
+    <p id="para_2">This is a red text</p>
+    <!-- OutPut is a red color text -->
+
+    <p id="para_3">Lets apply the css using js</p>
+
+    <script>
+        document.getElementById('para_1').innerHTML = 'Hello World JS'
+        document.getElementById('para_2').style.color = 'red'
+        document.querySelector('#para_3').classList.add('myCssStyle')
+    </script>
+</body>
+
+</html>
+
+<!-- Notes -->
+<!-- * Using innerHtml you can change the original value using js
+     * We can apply the css using js
+     * We can delete value using same.-->
