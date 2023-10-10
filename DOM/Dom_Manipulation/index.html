@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .myCssStyle{
+        .myCssStyle {
             background-color: black;
             color: #fff;
             font-size: 2rem;
@@ -25,16 +25,35 @@
 
     <p id="para_3">Lets apply the css using js</p>
 
+    <div id="para_4" class="para4">This is para4</div>
+
     <script>
-        document.getElementById('para_1').innerHTML = 'Hello World JS'
+        document.getElementById('para_1').innerHTML = '<h1> Hello World JS </h1>'
         document.getElementById('para_2').style.color = 'red'
         document.querySelector('#para_3').classList.add('myCssStyle')
+
+        // --- getAttribute --- 
+        let para4 = document.getElementById('para_4')
+        let acessTheClass = para4.getAttribute('class')
+        console.log(acessTheClass); // OP - para4
+
+        // --- setAttribute --- 
+        para4.setAttribute('class', 'newPara_4')
+        acessTheClass = para4.getAttribute('class')
+        console.log(acessTheClass); // OP - newPara_4
+
+
+        // <-- Notes -->
+        // Using innerHtml you can change the original value using js Dom
+        // We can apply the css using js Dom
+        // We can delete value using same.
+        // getAttribute use to get different value like class, id
+        // setAttribute is use to set the value like class, id
+        // innerText - whatever you see on webpage that onnly it will show. if any hidden element is there than it will can't be acess using innerText.
+        // innerContent - it's use to acess full content of a element, if any content is hidden, we can acess this one also.
+
+
     </script>
 </body>
 
 </html>
-
-<!-- Notes -->
-<!-- * Using innerHtml you can change the original value using js Dom
-     * We can apply the css using js Dom
-     * We can delete value using same.-->
