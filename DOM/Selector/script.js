@@ -32,12 +32,21 @@ console.log(selectH1); //  <h1>Hello World 1</h1>
 let selectAllH1 = document.querySelectorAll('h1')
 console.log(selectAllH1); 
 // It' return a nodelist. Node list is different from htmlCollection and it's has few extra feature's, Most used one is forEach and key. 
-// We can select id or class as same.
 
-// * ---- Notes ----- *
-// getElementsByTagName return all elemrnts in a colection. We have to use index to acess the specify one elemtnt.
-// For getElementById We dont required #. We can acess directlly
-// getElementsByClassName also return html collection index, it's same like getElementsByTagName. 
-// querySelector What ever you select it's return only first one value or it's select only first one.
-// querySelectorAll - return a nodelist, it's advance verson. 
-// we can acess the all node using key number. it's simelar like index number.
+// We can select anything in dom, using css selectors knowledge like uisng tag, id or class, child etc
+
+
+// * ------------- Notes ---------------- *
+// getElementsByTagName - return all elements in a colection called htmlCollection. We have to use index to acess the specify one elemtnt.
+// getElementById - We dont required - # symbol. We can acess directlly. Normally one element has one unique id for each. In a webpage one id nornally did't repeat. 
+// getElementsByClassName -  also return htmlCollection index, it's same like getElementsByTagName. 
+// querySelector - What ever you select it's return only first one value or it's select only first one.
+// querySelectorAll - return a nodelist. we can acess the all node using key number.
+
+// HtmlCollection and nodelist and array look like same , but when you find the properties of each element we get the actully different between this 3.
+
+// htmlCollection - dont have forEach or map, It has item([index]) and length and few more. But dont have array method here.
+// We can acess using index position and find the total length. 
+// Also we can convert htmlCollention to array, After that we can apply the array method.
+
+// NodeList - it has forEach item, key etc. So we can apply forEach, But can't apply map. Beacuse it's not a array. So we have to convert is in a array and than we can apply the array method.
