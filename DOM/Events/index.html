@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p onclick="alert('Hello para 1')">This is the first Paragraph</p>
+
+    <p id="para_2">This is the scound Paragraph</p>
+
+    <p id="para_3">This is the three Paragraph</p>
+
+
+    <script>
+        // onclick
+        document.querySelector('#para_2').onclick = () => {
+            alert('Hello Para 2')
+        }
+
+        // Using addEventListener
+        document.querySelector('#para_3').addEventListener('click', () => {
+            alert('Hello Para 3')
+        })
+
+        // -- bubbling
+        // document.querySelector('#para_3').addEventListener('click', () => {
+        //     alert('Hello Para 3')
+        // }, false)
+
+        // -- capturing
+        // document.querySelector('#para_3').addEventListener('click', () => {
+        //     alert('Hello Para 3')
+        // }, true)
+
+
+        // * ------- Notes --------- *
+        // We Have various Events is Javascript Dom -- 
+
+        // click events - The user clicks an HTML element
+        // chnage events (onChange) - An HTML element has been changed
+        // load events - The browser has finished loading the page
+        // onmouseover - The user moves the mouse over an HTML element
+        // onmouseout -	The user moves the mouse away from an HTML element
+        // onkeydown - The user pushes a keyboard key
+        // Keyboard has few different events.
+
+    </script>
+</body>
+
+</html>
