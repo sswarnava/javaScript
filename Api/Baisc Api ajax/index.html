@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const requestUrl = 'https://api.github.com/users/sswarnava'
+        const xhr = new XMLHttpRequest()
+        xhr.open('GET', requestUrl)
+        xhr.onreadystatechange = findTheUser;
+
+        function findTheUser() {
+            console.log(xhr.readyState);
+            let data
+            if (xhr.readyState === 4) {
+                data = JSON.parse(this.responseText)
+                // console.log(typeof data); - OP - object
+                login = data.login
+                publicRepo = data.public_repos
+                followers = data.followers
+                console.log(login, publicRepo, followers);
+            }
+        }
+        
+        xhr.send()
+    </script>
+</body>
+
+</html>
