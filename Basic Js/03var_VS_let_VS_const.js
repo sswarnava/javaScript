@@ -1,9 +1,9 @@
 // "use strict"; // - it's help us to avoid wrong delearation-
 
 // * ---- Without var keyword we can declear a variable .
-myName = "Ishaan"; // We Don't use var keyword but we are able to declear the value and no error. (Not use it, after some time may be it will make trouble). (--- Not recomended ---)
+myName = "Ishaan"; // We Don't use var keyword but we are able to declear the value and no error. (don't use it, after some time may be it will make trouble). (--- Not recomended ---)
 // we can use strict mode to avoid if we use strict mode it will give an error.
-console.log(myName); // outPut - Rony
+console.log(myName); // outPut - Ishaan
 
 
 // * -------- var VS let -------------- *

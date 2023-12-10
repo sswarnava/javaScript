@@ -43,7 +43,7 @@ if (age > 18) {
 
 // 0004) Ternary operator - Can say single line Conditional operator.
 let kidAge = 8;
-let drink = kidAge < 5 ? "Milk" : "Cofee"; // Logic - if kidAge is bellow 5 output or return will be milk and kidAge is greater than 5 then will returen Cofee.
+let drink = (kidAge < 5) ? "Milk" : "Cofee"; // Logic - if kidAge is bellow 5 output or return will be milk and kidAge is greater than 5 then will returen Cofee.
 console.log(drink); // OP - Cofee
 
 // 0005) Switch case 
