@@ -93,7 +93,7 @@ console.log(sum);
 //    10              5           15
 // Output is - 15
 
-// * ----- Notes ------ *
+// * ------ Notes ------- *
 // pop and push is faster than shift and unshift
 // splice methhod modify the original array
 // map use to acess the array data.
